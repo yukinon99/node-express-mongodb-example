@@ -60,7 +60,7 @@ async function createUser(request, response, next) {
       );
     }
 
-    const emailTaken = await usersService.checkEmailTaken(email);
+    const emailTaken = await usersService.checkExistEmail(email);
     if (emailTaken) {
       throw errorResponder(
         errorTypes.EMAIL_ALREADY_TAKEN,
