@@ -1,0 +1,15 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:5000/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYxNTZlYzNlODE5ZTZmZDI5MjNjNDY0IiwiaWF0IjoxNzEyNzMxNTA4LCJleHAiOjE3MTI4MTc5MDh9.BmThZKA0ZipdWzcPboWxsuv4xYt5R5a4WuqNBtJ6J5M
+}
